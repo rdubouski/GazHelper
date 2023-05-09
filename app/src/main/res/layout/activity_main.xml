@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="410dp"
         android:layout_height="366dp"
         android:layout_marginStart="16dp"
@@ -115,6 +115,6 @@
                     android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
