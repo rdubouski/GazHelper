@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, WhatToDo.class);
             startActivity(intent);
         } else if (v.getId() == R.id.btn_medic) {
-            Intent intent = new Intent(this, WhatToDoText.class);
-            intent.putExtra("btn", "btn_medic");
+            Intent intent = new Intent(this, MedicHelp.class);
             startActivity(intent);
         } else if (v.getId() == R.id.btn_one) {
             Intent intent = new Intent(this, WhatToDoText.class);

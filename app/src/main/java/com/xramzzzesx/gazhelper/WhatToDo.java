@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class WhatToDo extends AppCompatActivity implements View.OnClickListener {
 
-    Button button_gkv, button_gp, button_gpod, button_gy, button_gbk, button_gby, button_nogk;
+    Button button_gkv, button_gp, button_gpod, button_gy, button_gbk, button_gby, button_nogk, button_nogd, button_otr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,10 @@ public class WhatToDo extends AppCompatActivity implements View.OnClickListener 
         button_gby.setOnClickListener(this);
         button_nogk = (Button) findViewById(R.id.btn_nogk);
         button_nogk.setOnClickListener(this);
+        button_nogd = (Button) findViewById(R.id.btn_nogd);
+        button_nogd.setOnClickListener(this);
+        button_otr = (Button) findViewById(R.id.btn_otr);
+        button_otr.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +65,14 @@ public class WhatToDo extends AppCompatActivity implements View.OnClickListener 
         } else if (v.getId() == R.id.btn_nogk) {
             Intent intent = new Intent(this, WhatToDoText.class);
             intent.putExtra("btn", "btn_nogk");
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_nogd) {
+            Intent intent = new Intent(this, WhatToDoText.class);
+            intent.putExtra("btn", "btn_nogd");
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_otr) {
+            Intent intent = new Intent(this, WhatToDoText.class);
+            intent.putExtra("btn", "btn_otr");
             startActivity(intent);
         }
 
