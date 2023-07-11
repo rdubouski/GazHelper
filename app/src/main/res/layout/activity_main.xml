@@ -7,38 +7,6 @@
     android:background="#1BD4EC"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_medic"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Медицинская помощь"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_what" />
-
-    <Button
-        android:id="@+id/btn_one"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Одно окно"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_medic" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="129dp"
@@ -63,58 +31,58 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_what"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Что делать?"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <!--<ScrollView
-        android:layout_width="410dp"
-        android:layout_height="366dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_one"
-        tools:ignore="ExtraText">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#1BD4EC"
                 android:orientation="vertical"
-                android:background="#281e0f46"
-                android:padding="13dp"
-                android:layout_margin="10dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/logo"
-                    android:scaleType="fitStart"
-                    android:adjustViewBounds="true"
-                    android:background=" @android:color/holo_blue_light"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:text="Тут будет название"
-                    android:layout_gravity="center"/>
+                android:padding="13dp">
+
+                <Button
+                    android:id="@+id/btn_what"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Что делать?"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_medic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Медицинская помощь"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Одно окно"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>-->
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

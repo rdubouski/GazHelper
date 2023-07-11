@@ -7,134 +7,6 @@
     android:background="#1BD4EC"
     tools:context=".WhatToDo">
 
-    <Button
-        android:id="@+id/btn_otr"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Отравление угарным газом"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_nogd" />
-
-    <Button
-        android:id="@+id/btn_nogd"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Нет газа в частном доме"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_nogk" />
-
-    <Button
-        android:id="@+id/btn_nogk"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Не поступает газ в квартиру"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gby" />
-
-    <Button
-        android:id="@+id/btn_gby"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа от баллона на улице"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gbk" />
-
-    <Button
-        android:id="@+id/btn_gbk"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа от баллона в квартире"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gy" />
-
-    <Button
-        android:id="@+id/btn_gy"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа на улице"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gpod" />
-
-    <Button
-        android:id="@+id/btn_gp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа в подьезде"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gkv" />
-
-    <Button
-        android:id="@+id/btn_gpod"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа в подвале"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="129dp"
@@ -159,19 +31,113 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_gkv"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#061757"
-        android:text="Запах газа в квартире"
-        android:textColor="#F6F3F3"
-        android:textSize="34sp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#1BD4EC"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <Button
+                    android:id="@+id/btn_gkv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа в квартире"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_gp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа в подьезде"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_gpod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа в подвале"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_gy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа на улице"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_gbk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа от баллона в квартире"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_gby"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Запах газа от баллона на улице"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_nogk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Не поступает газ в квартиру"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_nogd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Нет газа в частном доме"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btn_otr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#061757"
+                    android:text="Отравление угарным газом"
+                    android:textColor="#F6F3F3"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
