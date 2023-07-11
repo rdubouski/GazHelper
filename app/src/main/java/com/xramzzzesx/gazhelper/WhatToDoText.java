@@ -78,7 +78,6 @@ public class WhatToDoText extends AppCompatActivity {
                         "•\tпозвонить 104\n");
             }
             if (bundle.get("btn").toString().equals("btn_otr")) {
-                textView.setTextSize(36);
                 textView.setText("•\tдождаться приезда аварийной бригады\n" +
                         "•\tустановить все краны на внутриквартирном газопроводе и газоиспользующем оборудовании в положение «закрыто»\n" +
                         "•\tорганизовать постоянное проветривание помещения (открыть окна, двери)\n" +
@@ -89,7 +88,11 @@ public class WhatToDoText extends AppCompatActivity {
                         "•\tсохранить обстановку, если это не угрожает здоровью и жизни людей\n");
             }
             if (bundle.get("btn").toString().equals("btn_one")) {
-                textView.setText("Скоро появится!");
+                textView.setText("Адрес: г. Новополоцк, ул. Гайдара, 5\n\n" +
+                        "Режим работы: пн-пт 8:00-20:00, сб 8:00-17:00, без обеда, вс выходной\n\n" +
+                        "Телефоны: 162, 8(0214)507-162, +375(29)2-104-100\n\n" +
+                        "Почта: okno@polotsk.oblgas.by\n\n" +
+                        "Телеграм: t.me/vitebskoblgas");
             }
             if (bundle.get("btn").toString().equals("btn_fire")) {
                 textView.setText("•\tУдалить источники ожога.\n" +
@@ -107,7 +110,6 @@ public class WhatToDoText extends AppCompatActivity {
                         "•\tбыстрая доставка пострадавшего в медицинское учреждение является также первой помощью.");
             }
             if (bundle.get("btn").toString().equals("btn_tok")) {
-                textView.setTextSize(36);
                 textView.setText("•\tнаденьте сухие шерстяные или резиновые перчатки, резиновые боты, галоши или положите под ноги изолирующий материал (доску, коврик);\n" +
                         "•\tотключите пострадавшего от источника тока (выключите рубильник, отбросьте провод палкой);\n" +
                         "•\tоттащите пострадавшего за одежду не менее чем на 10 метров от места касания проводом земли;\n" +
